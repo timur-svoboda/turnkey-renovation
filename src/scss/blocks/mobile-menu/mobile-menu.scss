@@ -1,0 +1,13 @@
+.mobile-menu {
+  overflow: hidden;
+  transition: height 200ms ease-out;
+  box-sizing: border-box;
+  @include linear-lock(rem(100px), rem($min-screen-width), rem(150px), rem($lg), padding-top, rem);
+  width: 100vw;
+  height: 0;
+  background-color: $white;
+
+  @import "./_open/mobile-menu_open.scss";
+  
+  @import "./__scroll-area/mobile-menu__scroll-area.scss";
+}

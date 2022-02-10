@@ -1,0 +1,25 @@
+@use "sass:math";
+
+&__line {
+  position: absolute;
+  left: rem(0.5 * $burger-size - 0.5 * $line-width);
+  transition: transform 0.5 * $duration ease,
+              top 0.5 * $duration ease 0.5 * $duration;
+  border-radius: math.ceil($line-height * 2);
+  width: rem($line-width);
+  height: rem($line-height);
+  background-color: $color;
+
+  &_number_1 {
+    top: rem(0.5 * $burger-size - 1.5 * $line-height - $gap);
+  }
+
+  &_number_2 {
+    top: rem(0.5 * $burger-size - 0.5 * $line-height);
+    transition: opacity 0s ease 0.5 * $duration;
+  }
+
+  &_number_3 {
+    top: rem(0.5 * $burger-size + 0.5 * $line-height + $gap);
+  }
+}

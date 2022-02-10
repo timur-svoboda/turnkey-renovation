@@ -1,10 +1,22 @@
 .header {
-  padding: rem(40px) 0;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  @include linear-lock(rem(100px), rem($min-screen-width), rem(150px), rem($lg), height, rem);
+
+  @import "./__container/header__container.scss";
+  @import "./__layout/header__layout.scss";
+  @import "./__logo-wrapper/header__logo-wrapper.scss";
+  @import "./__logo-link/header__logo-link.scss";
+  @import "./__nav-wrapper/header__nav-wrapper.scss";
+  @import "./__burger-wrapper/header__burger-wrapper.scss";
+  @import "./__switch-wrapper/header__switch-wrapper.scss";
+  @import "./__mobile-menu-wrapper/header__mobile-menu-wrapper.scss";
 }
 
-@import "./__layout/header__layout.scss";
-@import "./__logo-wrapper/header__logo-wrapper.scss";
-@import "./__logo-link/header__logo-link.scss";
-@import "./__nav-wrapper/header__nav-wrapper.scss";
-@import "./__hamburger-wrapper/header__hamburger-wrapper.scss";
-@import "./__switch-wrapper/header__switch-wrapper.scss";
+
+
+
+
+

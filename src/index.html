@@ -8,11 +8,14 @@
 </head>
 <body class="page-wrapper">
   <header class="header">
-    <div class="container">
+    <div class="header__container container">
       <div class="header__layout">
         <div class="header__logo-wrapper">
-          <a href="/" class="header__logo-link">
-            <img src="assets/images/header/logo-light.svg" alt="Логотип" class="responsive-image">
+          <a href="/" class="header__logo-link" aria-label="Ссылка на главную страницу">
+            <picture>
+              <source srcset="assets/images/header/light-logo-mobile.svg" media="(max-width: 575.98px)">
+              <img src="assets/images/header/light-logo.svg" alt="Логотип" class="responsive-image">
+            </picture>
           </a>
         </div>
         <div class="header__nav-wrapper">
@@ -27,11 +30,33 @@
             </ul>
           </nav>
         </div>
-        <div class="header__hamburger-wrapper">
-          Hamburger
-        </div>
         <div class="header__switch-wrapper">
-          <div id="theme-switch" class="switch"></div>
+          <div id="theme-switch" class="switch" tabindex="0" role="switch" aria-label="Переключатель визуальной темы сайта" aria-checked="false"></div>
+        </div>
+        <div class="header__burger-wrapper">
+          <div id="mobile-menu-burger" class="burger" tabindex="0" role="button" aria-label="Кнопка открытия и закрытия мобильного меню" aria-pressed="false">
+            <div class="burger__line burger__line_number_1"></div>
+            <div class="burger__line burger__line_number_2"></div>
+            <div class="burger__line burger__line_number_3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__mobile-menu-wrapper">
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu__scroll-area">
+          <div class="container">
+            <nav class="nav nav_vertical">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="/" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Услуги</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Наша команда</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Наши проекты</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Заказать звонок</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>

@@ -1,3 +1,9 @@
-.header__switch-wrapper {
-  padding: rem(23px) rem(17px) 0 0;
+&__switch-wrapper {
+  padding: rem(8px) rem(12px) 0 0;
+  @media (max-width: $lg) {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 rem(10px) 0 rem(10px);
+  }
 }
