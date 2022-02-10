@@ -1,0 +1,6 @@
+@use "sass:math";
+@import "./strip-unit.scss";
+
+@function prc($value1, $value2) {
+  @return math.div(strip-unit($value1), strip-unit($value2)) * 100%;
+}

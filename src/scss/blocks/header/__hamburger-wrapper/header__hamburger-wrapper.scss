@@ -1,0 +1,9 @@
+.header__hamburger-wrapper {
+  display: none;
+  @media (max-width: $lg) {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
+}

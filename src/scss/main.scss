@@ -1,0 +1,14 @@
+@import "./helpers/variables/variables.scss";
+@import "./helpers/functions/functions.scss";
+@import "./helpers/mixins/mixins.scss";
+
+@import "../assets/libs/normalize.css/normalize.css";
+@import "../assets/libs/reset.css/reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  background-color: #CCCCCC;
+}
+
+@import "./blocks/blocks.scss";

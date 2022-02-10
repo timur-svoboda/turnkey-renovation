@@ -1,0 +1,9 @@
+.nav__link {
+  display: block;
+  padding: em(5px) em(15px);
+  font-family: $default-font-family;
+  font-size: rem(16px);
+  line-height: em(20px);
+  text-decoration: none;
+  color: $default-text-color;
+}

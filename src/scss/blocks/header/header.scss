@@ -1,0 +1,10 @@
+.header {
+  padding: rem(40px) 0;
+}
+
+@import "./__layout/header__layout.scss";
+@import "./__logo-wrapper/header__logo-wrapper.scss";
+@import "./__logo-link/header__logo-link.scss";
+@import "./__nav-wrapper/header__nav-wrapper.scss";
+@import "./__hamburger-wrapper/header__hamburger-wrapper.scss";
+@import "./__switch-wrapper/header__switch-wrapper.scss";
