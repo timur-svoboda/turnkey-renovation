@@ -8,6 +8,7 @@
   background-color: $white;
 
   @import "./_open/mobile-menu_open.scss";
+  @import "./_theme/mobile-menu_theme_dark.scss";
   
   @import "./__scroll-area/mobile-menu__scroll-area.scss";
 }

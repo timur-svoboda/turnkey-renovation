@@ -47,12 +47,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // mobile-menu__scroll-area_shadow
   document.addEventListener("scroll", e => {
     const mobileMenuScrollArea = e.target;
-    if (mobileMenuScrollArea.classList.contains("mobile-menu__scroll-area")) {
+    if (mobileMenuScrollArea !== document && mobileMenuScrollArea.classList.contains("mobile-menu__scroll-area")) {
       if (mobileMenuScrollArea.scrollTop !== 0) {
         mobileMenuScrollArea.classList.add("mobile-menu__scroll-area_shadow")
       } else {
         mobileMenuScrollArea.classList.remove("mobile-menu__scroll-area_shadow")
       }
     }
-  }, true)
+  }, true);
+
+  // #theme-switch
+  const themeSwitch = document.querySelector("#theme-switch");
+  if (themeSwitch) {
+    themeSwitch.addEventListener("click", () => {
+      document.querySelectorAll(".page-wrapper").forEach(item => item.classList.toggle("page-wrapper_theme_dark"));
+      document.querySelectorAll(".logo").forEach(item => item.classList.toggle("logo_theme_dark"));
+      document.querySelectorAll(".nav").forEach(item => item.classList.toggle("nav_theme_dark"));
+      document.querySelectorAll(".burger").forEach(item => item.classList.toggle("burger_theme_dark"));
+      document.querySelectorAll(".mobile-menu").forEach(item => item.classList.toggle("mobile-menu_theme_dark"));
+    });
+  }
 });

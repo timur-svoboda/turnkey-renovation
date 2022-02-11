@@ -1,0 +1,12 @@
+&_theme {
+  &_dark {
+    & .logo__image {
+      &_dark {
+        display: block;
+      }
+      &_light {
+        display: none;
+      }
+    }
+  }
+}

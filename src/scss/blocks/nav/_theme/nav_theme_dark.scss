@@ -1,0 +1,8 @@
+&_theme_dark {
+  .nav__link {
+    color: $text-white;
+    &:hover {
+      color: $accent-secondary;
+    }
+  }
+}

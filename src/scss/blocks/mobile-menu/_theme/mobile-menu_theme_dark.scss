@@ -1,0 +1,7 @@
+&_theme_dark {
+  background-color: $bg-dark;
+  
+  & .mobile-menu__scroll-area_shadow {
+    box-shadow: 0px 6px 20px 0px rgba($white, 0.25);
+  }
+}

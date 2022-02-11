@@ -1,5 +1,6 @@
 .nav {
   @import "./_vertical/nav_vertical.scss";
+  @import "./_theme/nav_theme_dark.scss";
   @import "./__list/nav__list.scss";
   @import "./__item/nav__item.scss";
   @import "./__link/nav__link.scss";

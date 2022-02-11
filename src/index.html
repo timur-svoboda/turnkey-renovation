@@ -12,10 +12,16 @@
       <div class="header__layout">
         <div class="header__logo-wrapper">
           <a href="/" class="header__logo-link" aria-label="Ссылка на главную страницу">
-            <picture>
-              <source srcset="assets/images/header/light-logo-mobile.svg" media="(max-width: 575.98px)">
-              <img src="assets/images/header/light-logo.svg" alt="Логотип" class="responsive-image">
-            </picture>
+            <div class="logo">
+              <picture>
+                <source srcset="assets/images/header/light-logo-mobile.svg" media="(max-width: 575.98px)">
+                <img src="assets/images/header/light-logo.svg" alt="Логотип" class="logo__image logo__image_light responsive-image">
+              </picture>
+              <picture>
+                <source srcset="assets/images/header/dark-logo-mobile.svg" media="(max-width: 575.98px)">
+                <img src="assets/images/header/dark-logo.svg" alt="Логотип" class="logo__image logo__image_dark responsive-image">
+              </picture>
+            </div>
           </a>
         </div>
         <div class="header__nav-wrapper">
@@ -46,6 +52,26 @@
       <div id="mobile-menu" class="mobile-menu">
         <div class="mobile-menu__scroll-area">
           <div class="container">
+            <nav class="nav nav_vertical">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="/" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Услуги</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Наша команда</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Наши проекты</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Заказать звонок</a></li>
+              </ul>
+            </nav>
+            <nav class="nav nav_vertical">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="/" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Услуги</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Наша команда</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Наши проекты</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="/" class="nav__link">Заказать звонок</a></li>
+              </ul>
+            </nav>
             <nav class="nav nav_vertical">
               <ul class="nav__list">
                 <li class="nav__item"><a href="/" class="nav__link">О нас</a></li>
