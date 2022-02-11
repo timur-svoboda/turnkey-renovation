@@ -1,0 +1,10 @@
+@use "sass:color";
+
+&_accent {
+  transition: background-color 200ms ease-out;
+  background-color: $accent;
+  &:hover {
+    transition: background-color 200ms ease-in;
+    background-color: color.adjust($accent, $lightness: 2%);
+  }
+}

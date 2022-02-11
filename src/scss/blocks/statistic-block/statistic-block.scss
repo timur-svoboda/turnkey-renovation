@@ -1,0 +1,8 @@
+.statistic-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @import "./__number/statistic-block__number.scss";
+  @import "./__description/statistic-block__description.scss";
+}

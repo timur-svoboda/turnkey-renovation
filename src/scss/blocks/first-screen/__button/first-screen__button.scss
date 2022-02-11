@@ -1,0 +1,7 @@
+&__button {
+  @include linear-lock(rem(60px), rem($md), rem(170px), rem($lg), margin-bottom, rem);
+  @include linear-lock(rem(20px), rem($min-screen-width), rem(24px), rem($lg), font-size, rem);
+  @media (max-width: em($xs)) {
+    width: 100%;
+  }
+}

@@ -1,8 +1,9 @@
 .mobile-menu {
   overflow: hidden;
-  transition: height 200ms ease-out;
+  transition: height 200ms ease-out,
+              padding-top 0ms linear 200ms;
   box-sizing: border-box;
-  @include linear-lock(rem(100px), rem($min-screen-width), rem(150px), rem($lg), padding-top, rem);
+  padding-top: 0;
   width: 100vw;
   height: 0;
   background-color: $white;

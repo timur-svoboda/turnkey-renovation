@@ -1,4 +1,5 @@
 &_open {
   transition: height 200ms ease-in;
+  @include linear-lock(rem(100px), rem($min-screen-width), rem(150px), rem($lg), padding-top, rem);
   height: 100vh;
 }

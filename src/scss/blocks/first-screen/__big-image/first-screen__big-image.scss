@@ -1,0 +1,13 @@
+&__big-image {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: rem(-66px);
+  display: block;
+  max-width: 100%;
+  height: auto;
+  @media (max-width: em($md)) {
+    position: unset;
+    z-index: unset;
+  }
+}

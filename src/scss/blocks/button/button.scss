@@ -1,0 +1,17 @@
+.button {
+  box-sizing: border-box;
+  border: none;
+  border-radius: em(20px, 24px);
+  padding: em(16px, 24px) em(38px, 24px);
+  background-color: #000000;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: em(29px, 24px);
+  text-align: center;
+  color: #FFFFFF;
+
+  @import "./_link/button_link.scss";
+  @import "./_accent/button_accent.scss";
+}

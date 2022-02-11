@@ -1,0 +1,9 @@
+&__tagline {
+  margin-bottom: em(30px, 26px);
+  max-width: em(415px, 26px);
+  font-family: Montserrat;
+  font-weight: 300;
+  @include linear-lock(rem(18px), rem($min-screen-width), rem(26px), rem($lg), font-size, rem);
+  line-height: 120%;
+  color: #000000;
+}

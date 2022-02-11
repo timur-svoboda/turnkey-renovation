@@ -1,0 +1,8 @@
+&_sticky {
+  transition: height 200ms ease-in;
+  height: rem(100px);
+  box-shadow: 0 rem(5px) rem(10px) rem(2px) rgba($black, 0.2);
+  &.header_theme_dark {
+    box-shadow: 0 rem(-2px) rem(10px) rem(-5px) rgb($white, 0.25) inset;
+  }
+}

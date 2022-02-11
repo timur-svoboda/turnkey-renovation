@@ -1,0 +1,14 @@
+.first-screen {
+  padding-top: rem(240px);
+  @media (max-width: em($md)) {
+    @include linear-lock(rem(125px), rem($sm), rem(240px), rem($md), padding-top, rem);
+  }
+  @import "./__wrapper/first-screen__wrapper.scss";
+  @import "./__title/first-screen__title.scss";
+  @import "./__tagline/first-screen__tagline.scss";
+  @import "./__button/first-screen__button.scss";
+  @import "./__strip/first-screen__strip.scss";
+  @import "./__statistics/first-screen__statistics.scss";
+  @import "./__videos/first-screen__videos.scss";
+  @import "./__big-image/first-screen__big-image.scss";
+}

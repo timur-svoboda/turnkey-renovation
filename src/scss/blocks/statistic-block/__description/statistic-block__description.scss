@@ -1,0 +1,10 @@
+&__description {
+  font-family: Cormorant SC;
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: rem(29px, 24px);
+  text-align: center;
+  color: #FFFFFF;
+
+  @import "./_bounded/statistic-block__description_bounded.scss";
+}

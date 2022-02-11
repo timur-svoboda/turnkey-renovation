@@ -1,9 +1,17 @@
 .header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
   z-index: 10;
   display: flex;
   align-items: center;
+  transition: height 200ms ease-out;
+  width: 100%;
   @include linear-lock(rem(100px), rem($min-screen-width), rem(150px), rem($lg), height, rem);
+  background-color: $bg-light;
+
+  @import "./_sticky/header_sticky.scss";
+  @import "./_theme/header_theme_dark.scss";
 
   @import "./__container/header__container.scss";
   @import "./__layout/header__layout.scss";

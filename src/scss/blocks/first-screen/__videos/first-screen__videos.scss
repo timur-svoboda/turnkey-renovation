@@ -1,0 +1,8 @@
+&__videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, rem(240px));
+  gap: rem(25px);
+  @media (max-width: em($md)) {
+    @include linear-lock(rem(15px), rem($sm), rem(25px), rem($md), gap, rem);
+  }
+}

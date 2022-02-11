@@ -1,0 +1,13 @@
+&__statistics {
+  $offset: 10000px;
+  margin-left: rem(-$offset);
+  padding: rem(20px) rem(50px) 0 rem($offset + 112px);
+  background-color: #5D7B87;
+  @media (max-width: em($md)) {
+    @include linear-lock(rem($offset + 50px), rem($sm), rem($offset + 112px), rem($md), padding-left, rem);
+  }
+  @media (max-width: em($sm)) {
+    padding: rem(20px) 0 rem(24px);
+    margin: 0 0 rem(40px);
+  }
+}

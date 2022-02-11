@@ -61,10 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
   if (themeSwitch) {
     themeSwitch.addEventListener("click", () => {
       document.querySelectorAll(".page-wrapper").forEach(item => item.classList.toggle("page-wrapper_theme_dark"));
+      document.querySelectorAll(".header").forEach(item => item.classList.toggle("header_theme_dark"));
       document.querySelectorAll(".logo").forEach(item => item.classList.toggle("logo_theme_dark"));
       document.querySelectorAll(".nav").forEach(item => item.classList.toggle("nav_theme_dark"));
       document.querySelectorAll(".burger").forEach(item => item.classList.toggle("burger_theme_dark"));
       document.querySelectorAll(".mobile-menu").forEach(item => item.classList.toggle("mobile-menu_theme_dark"));
     });
+  }
+
+  // header
+  const header = document.querySelector(".header");
+  if (header) {
+    document.addEventListener("scroll", () => header.classList.toggle("header_sticky", window.pageYOffset > 0))
   }
 });

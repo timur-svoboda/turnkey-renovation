@@ -1,0 +1,12 @@
+&__strip {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: rem(55px);
+  @media (max-width: em($md)) {
+    @include linear-lock(rem(15px), rem($sm), rem(55px), rem($md), gap, rem);
+    margin-bottom: rem(60px);
+  }
+  @media (max-width: em($sm)) {
+    display: block;
+  }
+}
