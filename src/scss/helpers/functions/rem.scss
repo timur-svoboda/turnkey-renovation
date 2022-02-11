@@ -1,6 +1,0 @@
-@use "sass:math";
-@import "./strip-unit.scss";
-
-@function rem($px-value, $root-font-size: 16px) {
-  @return math.div(strip-unit($px-value), strip-unit($root-font-size)) * 1rem;
-}

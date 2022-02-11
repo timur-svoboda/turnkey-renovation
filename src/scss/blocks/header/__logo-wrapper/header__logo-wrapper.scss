@@ -1,4 +1,0 @@
-&__logo-wrapper {
-  padding: 0;
-  @include linear-lock(0, rem($lg), rem(55px), rem($xl), padding-left, rem);
-}
