@@ -1,0 +1,45 @@
+.arrow-link {
+  display: inline-flex;
+  text-decoration: none;
+
+  &_hovered {
+    .arrow-link__text {
+      transition: padding-right 100ms ease-in;
+      padding-right: rem(8px);
+    }
+  }
+
+  &_theme_dark {
+    .arrow-link__text {
+      color: #FFFFFF;
+    }
+
+    .arrow-link__arrow {
+      &_theme_dark {
+        display: block;
+      }
+
+      &_theme_light {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    transition: padding-right 100ms ease-out;
+    padding-right: rem(3px);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: rem(14px);
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &__arrow {
+    padding-top: rem(3px);
+
+    &_theme_dark {
+      display: none;
+    }
+  }
+}

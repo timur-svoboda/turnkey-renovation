@@ -69,6 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".first-screen").forEach(item => item.classList.toggle("first-screen_theme_dark"));
       document.querySelectorAll(".button").forEach(item => item.classList.toggle("button_theme_dark"));
       document.querySelectorAll(".title").forEach(item => item.classList.toggle("title_theme_dark"));
+      document.querySelectorAll(".arrow-link").forEach(item => item.classList.toggle("arrow-link_theme_dark"));
+      document.querySelectorAll(".section-about").forEach(item => item.classList.toggle("section-about_theme_dark"));
     });
   }
 
@@ -105,4 +107,18 @@ document.addEventListener("DOMContentLoaded", () => {
       videoPreview.querySelector(".popup").classList.remove("popup_close");
     }
   })
+  
+
+  // arrow-link
+  document.addEventListener("mouseenter", e => {
+    if (e.target.classList && e.target.classList.contains("arrow-link")) {
+      e.target.classList.add("arrow-link_hovered");
+    }
+  }, true);
+
+  document.addEventListener("mouseleave", e => {
+    if (e.target.classList && e.target.classList.contains("arrow-link")) {
+      e.target.classList.remove("arrow-link_hovered");
+    }
+  }, true);
 });

@@ -1,8 +1,13 @@
 .first-screen {
   padding-top: rem(240px);
+  @include linear-lock(rem(320px), rem($min-screen-width), rem(194px), rem($lg), margin-bottom, rem);
+  
   @media (max-width: em($md)) {
     @include linear-lock(rem(125px), rem($sm), rem(240px), rem($md), padding-top, rem);
+    margin-bottom: 80px;
   }
+
+
 
   &_theme_dark {
     .first-screen__tagline {

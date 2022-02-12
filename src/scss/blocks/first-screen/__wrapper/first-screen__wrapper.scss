@@ -1,5 +1,4 @@
 &__wrapper {
   position: relative;
-  padding: rem(66px) 0 rem(74px);
   @include linear-lock(0, rem($min-screen-width), rem(66px), rem($lg), padding-top, rem);
 }
