@@ -1,0 +1,33 @@
+.popup {
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: rem(15px);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000000, 0.8);
+
+  &_close {
+    display: none;
+  }
+
+  &__cross {
+    position: absolute;
+    top: rem(15px);
+    right: rem(15px);
+  }
+
+  &__content {
+    &_youtube-video {
+      width: 100%;
+      max-width: rem(576px * 1.2);
+      @include linear-lock(rem(270px), rem($min-screen-width), rem(315px * 1.2), rem($sm), height, rem);
+      max-height: rem(315px * 1.2);
+    }
+  }
+}

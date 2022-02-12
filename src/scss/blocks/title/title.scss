@@ -3,4 +3,8 @@
   @include linear-lock(rem(46px), rem($min-screen-width), rem(60px), rem($lg), font-size, rem);
   line-height: em(73px, 60px);
   color: $default-text-color;
+
+  &_theme_dark {
+    color: #FFFFFF;
+  }
 }

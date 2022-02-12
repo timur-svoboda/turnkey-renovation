@@ -5,4 +5,7 @@
   @media (max-width: em($md)) {
     @include linear-lock(rem(15px), rem($sm), rem(25px), rem($md), gap, rem);
   }
+  @media (max-width: em($sm)) {
+    grid-template: auto 1fr / 1fr;
+  }
 }

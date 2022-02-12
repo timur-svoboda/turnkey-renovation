@@ -4,6 +4,10 @@
   margin: 0;
   min-height: 100vh;
 
+  &_disable-scrolling {
+    overflow: hidden;
+  }
+
   @import "./_theme/page-wrapper_theme_dark.scss";
   
   @import "./__main/page-wrapper__main.scss";

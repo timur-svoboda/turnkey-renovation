@@ -14,4 +14,8 @@
 
   @import "./_link/button_link.scss";
   @import "./_accent/button_accent.scss";
+
+  &_theme_dark {
+    background-color: #D3BB59;
+  }
 }

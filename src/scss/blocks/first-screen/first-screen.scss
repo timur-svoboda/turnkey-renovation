@@ -3,6 +3,17 @@
   @media (max-width: em($md)) {
     @include linear-lock(rem(125px), rem($sm), rem(240px), rem($md), padding-top, rem);
   }
+
+  &_theme_dark {
+    .first-screen__tagline {
+      color: #FFFFFF;
+    }
+
+    .first-screen__statistics {
+      background-color: #3A3A3A;
+    }
+  }
+
   @import "./__wrapper/first-screen__wrapper.scss";
   @import "./__title/first-screen__title.scss";
   @import "./__tagline/first-screen__tagline.scss";

@@ -1,0 +1,11 @@
+.video-preview {
+  position: relative;
+  cursor: pointer;
+
+  &__play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,31 @@
+.cross {
+  width: rem(48px);
+  height: rem(48px);
+  cursor: pointer;
+
+  &:hover {
+    .cross__line {
+      transition: background-color 200ms ease-in;
+      background-color: #FFFFFF;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    left: rem(0.5 * (48px - 36px));
+    top: rem(0.5 * (48px - 4px));
+    transition: background-color 200ms ease-out;
+    border-radius: rem(4px);
+    width: rem(36px);
+    height: rem(4px);
+    background-color: #858586;
+
+    &_1 {
+      transform: rotate(45deg);
+    }
+
+    &_2 {
+      transform: rotate(-45deg);
+    }
+  }
+}
