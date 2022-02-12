@@ -1,4 +1,5 @@
 .section-about {
+  @include linear-lock(rem(80px), rem(320px), rem(150px), rem(1199.98px), margin-bottom, rem);
 
   &_theme_dark {
     .section-about {

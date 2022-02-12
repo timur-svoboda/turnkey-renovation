@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .button {
   box-sizing: border-box;
   border: none;
@@ -16,6 +18,11 @@
   @import "./_accent/button_accent.scss";
 
   &_theme_dark {
+    transition: background-color 200ms ease-out;
     background-color: #D3BB59;
+    &:hover {
+      transition: background-color 200ms ease-in;
+      background-color: color.adjust(#D3BB59, $lightness: -10%);
+    }
   }
 }

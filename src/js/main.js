@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".title").forEach(item => item.classList.toggle("title_theme_dark"));
       document.querySelectorAll(".arrow-link").forEach(item => item.classList.toggle("arrow-link_theme_dark"));
       document.querySelectorAll(".section-about").forEach(item => item.classList.toggle("section-about_theme_dark"));
+      document.querySelectorAll(".section-statistics").forEach(item => item.classList.toggle("section-statistics_theme_dark"));
     });
   }
 
