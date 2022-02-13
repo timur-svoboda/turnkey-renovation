@@ -1,0 +1,20 @@
+.letter-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    position: relative;
+  }
+
+  &__letter {
+    position: absolute;
+    z-index: -1;
+    top: rem(-25px);
+    left: rem(-33px);
+
+    @media (max-width: 767.98px) {
+      left: -5px;
+    }
+  }
+}

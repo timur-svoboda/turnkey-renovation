@@ -4,6 +4,14 @@
   line-height: em(73px, 60px);
   color: $default-text-color;
 
+  &_h2 {
+    @include linear-lock(rem(42px), rem($min-screen-width), rem(48px), rem($lg), font-size, rem);
+  }
+
+  &_center {
+    text-align: center;
+  }
+
   &_theme_dark {
     color: #FFFFFF;
   }

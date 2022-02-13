@@ -1,0 +1,19 @@
+.letter {
+  &_theme_light {
+    .letter__image_theme_light {
+      display: block;
+    }
+  }
+
+  &_theme_dark {
+    .letter__image_theme_dark {
+      display: block;
+    }
+  }
+
+  &__image {
+    display: none;
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -72,6 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".arrow-link").forEach(item => item.classList.toggle("arrow-link_theme_dark"));
       document.querySelectorAll(".section-about").forEach(item => item.classList.toggle("section-about_theme_dark"));
       document.querySelectorAll(".section-statistics").forEach(item => item.classList.toggle("section-statistics_theme_dark"));
+      document.querySelectorAll(".letter").forEach(item => {
+        item.classList.toggle("letter_theme_light");
+        item.classList.toggle("letter_theme_dark");
+      });
+      document.querySelectorAll(".section-projects").forEach(item => {
+        item.classList.toggle("section-projects_theme_light");
+        item.classList.toggle("section-projects_theme_dark");
+      });
     });
   }
 
@@ -122,4 +130,18 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.classList.remove("arrow-link_hovered");
     }
   }, true);
+
+  // section-projects
+  Array.from(document.querySelectorAll(".section-projects__project-slider")).forEach(projectSlider => {
+    const paginationElement = projectSlider.querySelector(".section-projects__project-slider-pagination");
+
+    new Swiper(projectSlider, {
+      pagination: {
+        el: paginationElement,
+        type: "bullets",
+        bulletClass: "section-projects__project-slider-bullet",
+        bulletActiveClass: "section-projects__project-slider-bullet_active"
+      }
+    });
+  });
 });

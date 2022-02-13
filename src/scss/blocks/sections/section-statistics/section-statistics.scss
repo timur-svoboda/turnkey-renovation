@@ -42,6 +42,7 @@
 
     &_right {
       align-self: flex-end;
+      justify-content: flex-end;
       margin-right: rem(-10000px);
       @include linear-lock(rem(30px), rem(767.98px), rem(84px), rem(1999.98px), padding-left, rem);
       @include linear-lock(rem(10000px), rem(767.98px), rem(10000px + 84px), rem(1999.98px), padding-right, rem);
@@ -55,7 +56,16 @@
     margin-bottom: rem(28px);
 
     &_last {
+      margin-left: 0;
       margin-right: 0;
+    }
+
+    &_right {
+      @media (max-width: 767.98px) {
+        flex-direction: row-reverse;
+        margin-right: 0;
+        @include linear-lock(rem(30px), rem(767.98px), rem(50px), rem(1999.98px), margin-left, rem);
+      }
     }
   }
 
@@ -66,6 +76,13 @@
     font-size: rem(50px);
     line-height: 100%;
     color: #EEECD5;
+
+    &_right {
+      @media (max-width: 767.98px) {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
   }
 
   &__item-desc {
@@ -74,5 +91,11 @@
     font-size: rem(14px);
     line-height: 120%;
     color: #FFFFFF;
+
+    &_right {
+      @media (max-width: 767.98px) {
+        text-align: right;
+      }
+    }
   }
 }
