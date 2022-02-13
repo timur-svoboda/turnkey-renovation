@@ -25,7 +25,6 @@
     }
   }
 
-
   &__inner {
     margin: 0 auto;
     max-width: rem(1190px);
@@ -156,5 +155,15 @@
     font-family: Montserrat;
     font-size: rem(14px);
     line-height: 135%;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(90px);
+
+    @media (max-width: 767.98px) {
+      margin-top: rem(60px);
+    }
   }
 }

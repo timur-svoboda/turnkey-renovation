@@ -32,6 +32,11 @@
     padding: rem(28px) rem(84px) 0;
     background-color: #5D7B87;
 
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      width: 100%;
+    }
+
     &_left {
       align-self: flex-start;
       margin-bottom: rem(70px);
