@@ -1,0 +1,22 @@
+.input {
+  outline: none;
+  border: {
+    left: none;
+    right: none;
+    top: none;
+    bottom: rem(1px) solid #FFFFFF; 
+  }
+  padding: rem(5px);  
+  width: 100%;
+  background-color: transparent;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: rem(18px);
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.input::placeholder {
+  color: #FFFFFF;
+}

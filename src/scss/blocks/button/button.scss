@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  cursor: pointer;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -35,6 +36,15 @@
   min-height: rem(60px);
   @include linear-lock(rem(19px), rem(320px), rem(24px), rem(575.98px), font-size, rem); 
   line-height: em(29px, 24px);
+}
+
+.button_theme_outlined {
+  border: 1px solid #FFFFFF;
+  padding: {
+    left: 40px;
+    right: 40px;
+  }
+  background-color: transparent;
 }
 
 .button_theme_light {

@@ -68,8 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".mobile-menu").forEach(item => item.classList.toggle("mobile-menu_theme_dark"));
       document.querySelectorAll(".first-screen").forEach(item => item.classList.toggle("first-screen_theme_dark"));
       document.querySelectorAll(".button").forEach(button => {
-        button.classList.toggle("button_theme_light");
-        button.classList.toggle("button_theme_dark");
+        if (!button.classList.contains("button_theme_outlined")) {
+          button.classList.toggle("button_theme_light");
+          button.classList.toggle("button_theme_dark");
+        }
       });
       document.querySelectorAll(".title").forEach(item => item.classList.toggle("title_theme_dark"));
       document.querySelectorAll(".arrow-link").forEach(item => item.classList.toggle("arrow-link_theme_dark"));

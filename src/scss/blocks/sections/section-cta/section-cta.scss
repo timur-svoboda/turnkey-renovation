@@ -1,0 +1,31 @@
+.section-cta {
+  margin-bottom: rem(60px);
+
+  @media (max-width: 767.98px) {
+    margin-bottom: rem(30px);
+  }
+}
+
+.section-cta__inner {
+  display: flex;
+  justify-content: flex-end;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: {
+    left: rem(15px);
+    right: rem(15px);
+  }
+  max-width: rem(1190px);
+}
+
+.section-cta__feedback-form {
+  position: relative;
+  top: rem(-100px);
+  max-width: rem(390px);
+
+  @media (max-width: 1199.98px) {
+    top: unset;
+  }
+}
