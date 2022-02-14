@@ -80,6 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
         item.classList.toggle("section-projects_theme_light");
         item.classList.toggle("section-projects_theme_dark");
       });
+      document.querySelectorAll(".workflow-step").forEach(item => {
+        item.classList.toggle("workflow-step_theme_light");
+        item.classList.toggle("workflow-step_theme_dark");
+      });
     });
   }
 

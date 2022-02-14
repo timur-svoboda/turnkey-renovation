@@ -1,0 +1,38 @@
+.section-workflow {
+  @include linear-lock(rem(40px), rem(320px), rem(130px), rem(1199.98px), margin-bottom, rem);
+
+  &__letter-title {
+    margin-bottom: rem(106px);
+
+    @media (max-width: 1199.98px) {
+      @include linear-lock(rem(50px), rem(992px), rem(106px), rem(1199.98px), margin-bottom, rem);
+    }
+  }
+
+  &__main {
+    display: flex;
+    gap: rem(75px);
+
+    @media (max-width: 1199.98px) {
+      @include linear-lock(rem(15px), rem(992px), rem(75px), rem(1199.98px), gap, rem);
+    }
+
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      gap: rem(60px);
+    }
+  }
+
+  &__steps {
+    padding-left: rem(129px);
+
+    @media (max-width: 1199.98px) {
+      @include linear-lock(0, rem(992px), rem(129px), rem(1199.98px), padding-left, rem);
+    }
+
+    @media (max-width: 991.98px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

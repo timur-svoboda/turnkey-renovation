@@ -1,5 +1,6 @@
 .section-projects {
   padding: 0 rem(15px);
+  @include linear-lock(rem(40px), rem(320px), rem(130px), rem(1199.98px), margin-bottom, rem);
 
   &_theme_light {
     .section-projects {

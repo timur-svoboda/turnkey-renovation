@@ -1,0 +1,149 @@
+.workflow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(15px);
+  border-bottom: rem(1px) solid #5D7B87;
+  padding-right: rem(19px);
+  max-width: rem(600px);
+  height: rem(175px);
+
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    gap: rem(20px);
+    height: unset;
+    padding: 30px 0;
+  }
+
+  &_theme_light {
+    border-bottom-color: #5D7B87;
+
+    .workflow-step__number {
+      filter: invert(45%) sepia(34%) saturate(280%) hue-rotate(152deg) brightness(95%) contrast(93%);
+    }
+
+    .workflow-step__title-text {
+      color: #5D7B87;
+    }
+
+    .workflow-step__desc {
+      color: #000000;
+    }
+  }
+
+  &_theme_dark {
+    border-bottom-color: #D3BB5A;
+
+    .workflow-step__number {
+      filter: invert(67%) sepia(22%) saturate(858%) hue-rotate(10deg) brightness(103%) contrast(97%);
+    }
+
+    .workflow-step__title-text {
+      color: #FFFFFF;
+    }
+
+    .workflow-step__desc {
+      color: #FFFFFF;
+    }
+  }
+
+  &_number_1 {
+    @media (max-width: 991.98px) {
+      align-self: flex-start;
+    }
+    
+    .workflow-step__title {
+      padding-left: rem(28px);
+
+      @media (max-width: 991.98px) {
+        @include linear-lock(0, rem(576px), rem(28px), rem(991.98px), padding-left, rem);
+      }
+    }
+
+    .workflow-step__number {
+      left: rem(95px);
+    }
+
+    .workflow-step__desc {
+      padding-top: rem(41px);
+    }
+  }
+
+  &_number_2 {
+    @media (max-width: 991.98px) {
+      align-self: flex-end;
+    }
+
+    .workflow-step__number {
+      left: rem(97px);
+    }
+
+    .workflow-step__desc {
+      padding-top: rem(41px);
+    }
+  }
+
+  &_number_3 {
+    @media (max-width: 991.98px) {
+      align-self: flex-start;
+    }
+
+    .workflow-step__title {
+      padding-left: rem(38px);
+    }
+
+    .workflow-step__number {
+      left: rem(95px);
+    }
+
+    .workflow-step__desc {
+      padding-top: rem(40px);
+    }
+  }
+
+  &_number_4 {
+    @media (max-width: 991.98px) {
+      align-self: flex-end;
+    }
+
+    .workflow-step__number {
+      left: rem(86px);
+    }
+
+    .workflow-step__desc {
+      padding-top: rem(22px);
+    }
+  }
+
+  &__title {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: rem(67px);
+    flex: 0 0 rem(233px);
+
+    @media (max-width: 1199.98px) {
+      @include linear-lock(rem(200px), rem(992px), rem(233px), rem(1199.98px), flex-basis, rem);
+    }
+
+    @media (max-width: 575.98px) {
+      flex-basis: unset;
+    }
+  }
+
+  &__title-text {
+    font-family: Montserrat;
+    font-size: rem(48px);
+    line-height: em(48px, 59px);
+  }
+
+  &__number {
+    position: absolute;
+    top: rem(20px);
+  }
+
+  &__desc {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: rem(14px);
+    line-height: 135%;
+  }
+}
