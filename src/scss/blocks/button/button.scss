@@ -1,28 +1,58 @@
 @use "sass:color";
 
 .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
-  border: none;
-  border-radius: em(20px, 24px);
-  padding: em(16px, 24px) em(38px, 24px);
-  background-color: #000000;
-  cursor: pointer;
   font-family: Montserrat;
+  font-style: normal;
   font-weight: 500;
-  font-size: rem(24px);
-  line-height: em(29px, 24px);
-  text-align: center;
   color: #FFFFFF;
+}
 
-  @import "./_link/button_link.scss";
-  @import "./_accent/button_accent.scss";
+.button_link {
+  text-decoration: none;
+}
 
-  &_theme_dark {
-    transition: background-color 200ms ease-out;
-    background-color: #D3BB59;
-    &:hover {
-      transition: background-color 200ms ease-in;
-      background-color: color.adjust(#D3BB59, $lightness: -10%);
-    }
+.button_size_s {
+  border-radius: rem(10px);
+  padding: {
+    left: rem(16px);
+    right: rem(16px);
   }
+  min-height: rem(40px);
+  font-size: rem(14px);
+  line-height: em(17px, 14px);
+}
+
+.button_size_m {
+  border-radius: rem(20px);
+  padding: {
+    left: rem(38px);
+    right: rem(38px);
+  }
+  min-height: rem(60px);
+  @include linear-lock(rem(19px), rem(320px), rem(24px), rem(575.98px), font-size, rem); 
+  line-height: em(29px, 24px);
+}
+
+.button_theme_light {
+  transition: background-color 100ms ease-out;
+  background-color: #22C3C3;
+}
+
+.button_theme_light-hover {
+  transition: background-color 100ms ease-in;
+  background-color: color.adjust(#22C3C3, $lightness: 5%);
+}
+
+.button_theme_dark {
+  transition: background-color 100ms ease-out;
+  background-color: #D3BB59;
+}
+
+.button_theme_dark-hover {
+  transition: background-color 100ms ease-in;
+  background-color: color.adjust(#D3BB59, $lightness: -5%);
 }

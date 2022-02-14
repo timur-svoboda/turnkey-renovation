@@ -1,0 +1,115 @@
+.section-calculator_theme_light .section-calculator__plan-info-text {
+  color: #000000;
+}
+
+.section-calculator_theme_light .section-calculator__plan-price {
+  color: #000000;
+}
+
+.section-calculator_theme_dark .section-calculator__plan-info-text {
+  color: #FFFFFF;
+}
+
+.section-calculator_theme_dark .section-calculator__plan-price {
+  color: #FFFFFF;
+}
+
+.section-calculator__inner {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: {
+    left: rem(15px);
+    right: rem(15px);
+  }
+  max-width: rem(1190px);
+}
+
+.section-calculator__letter-title {
+  margin-bottom: rem(63px);
+}
+
+.section-calculator__top {
+  display: flex;
+  flex-direction: column;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  max-width: rem(466px);
+}
+
+.section-calculator__tab-bar {
+  margin-bottom: rem(20px);
+
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    border-bottom: none;
+  }
+}
+
+.section-calculator__button {
+  align-self: flex-end;
+}
+
+.section-calculator__plan-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: rem(15px);
+  margin-bottom: rem(28px);
+}
+
+.section-calculator__plan-info-text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: rem(18px);
+  line-height: em(22px, 18px);
+}
+
+.section-calculator__plan-price {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: rem(64px);
+  line-height: em(52px, 64px);
+}
+
+.section-calculator__arrow-link {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.section-calculator__slider {
+  overflow: hidden;
+
+  @media (max-width: 767.98px) {
+    margin-bottom: rem(30px);
+  }
+}
+
+.section-calculator__slide {
+  padding-top: prc(550px, 1190px);
+  background: {
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+}
+
+.section-calculator__calculator {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: rem(-27px);
+  box-sizing: border-box;
+  max-width: rem(640px);
+
+  @media (max-width: 767.98px) {
+    top: unset;
+  }
+}
+
+.section-calculator__checkbox-list {
+  flex-wrap: wrap;
+}

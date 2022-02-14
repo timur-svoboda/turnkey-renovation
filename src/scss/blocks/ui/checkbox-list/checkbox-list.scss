@@ -1,0 +1,32 @@
+.checkbox-list {
+  display: flex;
+  align-items: center;
+  gap: rem(26px);
+}
+
+.checkbox-list_theme_light .checkbox-list__checkbox {
+  border-bottom-color: #22C3C3;
+  color: #000000;
+}
+
+.checkbox-list_theme_dark .checkbox-list__checkbox {
+  border-bottom-color: #D3BA58;
+  color: #FFFFFF;
+}
+
+.checkbox-list__checkbox {
+  border-bottom: rem(2px) solid transparent;
+  padding: {
+    left: rem(2px);
+    right: rem(2px);
+    top: rem(2px);
+  }
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: rem(14px);
+  line-height: em(17px, 14px);
+}
+
+.checkbox-list__checkbox_active {
+  font-weight: 600;
+}

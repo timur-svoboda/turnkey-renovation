@@ -74,7 +74,7 @@
         <div class="first-screen__wrapper">
           <h1 class="first-screen__title title">Интерьер Вашей мечты</h1>
           <p class="first-screen__tagline">Поможем Вам создать дизайн мечты и воплатить его в жизнь</p>
-          <a href="#" class="first-screen__button button button_link button_accent">Расчитать стоимость</a>
+          <a href="#" class="first-screen__button button button_link button_size_m button_theme_light">Расчитать стоимость</a>
           <div class="first-screen__strip">
             <div class="first-screen__statistics">
               <div class="statistic-block"> 
@@ -280,7 +280,7 @@
           </div>
         </div>
         <div class="section-projects__button">
-          <a href="#" class="button button_link button_accent">Другие проекты</a>
+          <a href="#" class="button button_link button_size_s button_theme_light">Другие проекты</a>
         </div>
       </div>
     </section>
@@ -328,6 +328,80 @@
             </div>
           </div>
           <img src="./assets/images/section-workflow/image.jpg" alt="Описание изображения" class="section-workflow__image responsive-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-calculator">
+      <div class="section-calculator__inner">
+        <div class="letter-title section-calculator__letter-title">
+          <h2 class="title title_h2 letter-title__title">
+            Цены и калькулятор
+            <div class="letter letter_theme_light letter-title__letter">
+              <img src="./assets/images/section-calculator/letter_theme_light.svg" alt="Описание изображения" class="letter__image letter__image_theme_light">
+              <img src="./assets/images/section-calculator/letter_theme_dark.svg" alt="Описание изображения" class="letter__image letter__image_theme_dark">
+            </div>
+          </h2>
+        </div>
+
+        <div class="section-calculator__top">
+          <div class="section-calculator__tab-bar tab-bar tab-bar_theme_light" data-value="standard" role="tablist">
+            <div class="tab-bar__tab tab-bar__tab_active" data-value="standard" role="tab" aria-selected="true">Стандарт</div>
+            <div class="tab-bar__tab" data-value="comfort" role="tab" aria-selected="false">Комфорт</div>
+            <div class="tab-bar__tab" data-value="premium" role="tab" aria-selected="false">Премиум</div>
+          </div>
+          <a href="#" class="section-calculator__button button button_size_s button_link button_theme_light">Оформить тариф</a>
+          <div class="section-calculator__plan-info">
+            <span class="section-calculator__plan-info-text">от</span>
+            <output class="section-calculator__plan-price">4000</output>
+            <span class="section-calculator__plan-info-text">р/м2</span>
+            <a href="#" class="section-calculator__arrow-link arrow-link">
+              <div class="arrow-link__text">Подробнее о тарифе</div>
+              <img src="./assets/images/arrow-link/arrow_theme_light.svg" alt="Стрелка" class="arrow-link__arrow arrow-link__arrow_theme_light">
+              <img src="./assets/images/arrow-link/arrow_theme_dark.svg" alt="Стрелка" class="arrow-link__arrow arrow-link__arrow_theme_dark">
+            </a>
+          </div>
+        </div>
+
+        <div class="section-calculator__slider">
+          <div class="swiper-wrapper">
+            <div class="section-calculator__slide swiper-slide" style="background-image: url(./assets/images/section-calculator/standard.jpg)"></div>
+            <div class="section-calculator__slide swiper-slide" style="background-image: url(./assets/images/section-calculator/comfort.jpg)"></div>
+            <div class="section-calculator__slide swiper-slide" style="background-image: url(./assets/images/section-calculator/premium.jpg)"></div>
+          </div>
+        </div>
+
+        <div class="section-calculator__calculator calculator calculator_theme_light">
+          <div class="calculator__field">
+            <label class="calculator__label">Площадь: </label>
+            <div class="calculator__range-with-output">
+              <div class="section-calculator__range calculator__range range range_theme_light" data-min="25" data-max="250" data-value="25">
+                <div class="range__area"></div>
+                <div class="range__circle" data-drag="false">
+                  <div class="range__circle-area"></div>
+                </div>
+              </div>
+              <output class="calculator__range-output">25 м2</output>
+            </div>
+          </div>
+          <div class="calculator__field">
+            <label class="calculator__label">Количество комнат: </label>
+            <div class="section-calculator__radio radio radio_theme_light" data-value="1">
+              <div class="radio__item radio__item_active" data-value="1">1</div>
+              <div class="radio__item" data-value="2">2</div>
+              <div class="radio__item" data-value="3">3</div>
+              <div class="radio__item" data-value="4">4</div>
+              <div class="radio__item" data-value="5">5+</div>
+            </div>
+          </div>
+          <div class="calculator__field">
+            <label class="calculator__label">Дополнительно: </label>
+            <div class="section-calculator__checkbox-list checkbox-list checkbox-list_theme_light" data-values="">
+              <div class="checkbox-list__checkbox" data-value="replaning">Перепланировка</div>
+              <div class="checkbox-list__checkbox" data-value="design">Дизайн</div>
+              <div class="checkbox-list__checkbox" data-value="unmount">Демонтаж</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

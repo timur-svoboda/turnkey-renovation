@@ -1,0 +1,33 @@
+.radio {
+  display: flex;
+  align-items: baseline;
+  gap: rem(32px);
+}
+
+.radio_theme_light .radio__item {
+  border-bottom-color: #22C3C3;
+  color: #000000;
+}
+
+.radio_theme_dark .radio__item {
+  border-bottom-color: #D3BA58;
+  color: #FFFFFF;
+}
+
+.radio__item {
+  border-bottom: rem(1px) solid;
+  padding: {
+    left: rem(4px);
+    right: rem(4px);
+    top: rem(3px);
+    bottom: rem(3px);
+  }
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: rem(18px);
+  line-height: em(22px, 18px);
+}
+
+.radio__item_active {
+  font-weight: 600;
+}
