@@ -113,6 +113,14 @@ document.addEventListener("DOMContentLoaded", () => {
         tabBar.classList.toggle("checkbox-list_theme_light");
         tabBar.classList.toggle("checkbox-list_theme_dark");
       });
+      document.querySelectorAll(".footer-nav").forEach(tabBar => {
+        tabBar.classList.toggle("footer-nav_theme_light");
+        tabBar.classList.toggle("footer-nav_theme_dark");
+      });
+      document.querySelectorAll(".footer").forEach(tabBar => {
+        tabBar.classList.toggle("footer_theme_light");
+        tabBar.classList.toggle("footer_theme_dark");
+      });
     });
   }
 
@@ -386,4 +394,23 @@ document.addEventListener("DOMContentLoaded", () => {
       }));
     }
   })
+
+  // footer-nav
+  document.addEventListener("mouseenter", e => {
+    if (e.target.classList && e.target.classList.contains("footer-nav__link")) {
+      const footerNav = e.target.closest(".footer-nav");
+      if (footerNav.classList.contains("footer-nav_theme_light")) {
+        e.target.classList.add("footer-nav__link_theme_light-hover");
+      } else if (footerNav.classList.contains("footer-nav_theme_dark")) {
+        e.target.classList.add("footer-nav__link_theme_dark-hover");
+      }
+    }
+  }, true);
+
+  document.addEventListener("mouseleave", e => {
+    if (e.target.classList && e.target.classList.contains("footer-nav__link")) {
+      e.target.classList.remove("footer-nav__link_theme_light-hover");
+      e.target.classList.remove("footer-nav__link_theme_dark-hover");
+    }
+  }, true);
 });
