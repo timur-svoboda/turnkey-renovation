@@ -177,6 +177,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const paginationElement = projectSlider.querySelector(".section-projects__project-slider-pagination");
 
     new Swiper(projectSlider, {
+      preloadImages: false,
+      lazy: true,
       pagination: {
         el: paginationElement,
         type: "bullets",
@@ -244,6 +246,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const calculatorSlider = document.querySelector(".section-calculator__slider");
   if (calculatorSlider) {
     const slider = new Swiper(calculatorSlider, {
+      preloadImages: false,
+      lazy: true,
       allowTouchMove: false
     });
 
