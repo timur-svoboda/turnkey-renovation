@@ -62,3 +62,20 @@
     margin-right: 0;
   }
 }
+.footer__copyright {
+  padding: 30px;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: rem(14px);
+  line-height: em(20px, 14px);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer__copyright-link {
+  color: #D3BB59;
+}
+
+.footer__copyright-link:hover {
+  text-decoration: none;
+}
