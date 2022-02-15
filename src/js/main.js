@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // lazy-load
+  new LazyLoad();
+
   // background-image
   Array.from(document.querySelectorAll(".background-image")).forEach(bgi => {
     if (bgi.dataset.src) {
@@ -336,30 +339,27 @@ document.addEventListener("DOMContentLoaded", () => {
   
   document.addEventListener("mousedown", e => {
     if (e.target.classList && e.target.classList.contains("range__circle-area")) {
-      e.target.closest(".range__circle").dataset.drag = true;
-    }
-  });
-
-  document.addEventListener("mouseup", () => {
-    const circle = document.querySelector(".range__circle[data-drag=true]");
-    if (circle) {
-      circle.dataset.drag = false
-    }
-  });
-
-  document.addEventListener("mousemove", e => {
-    const circle = document.querySelector(".range__circle[data-drag=true]");
-    if (circle) {
+      const circle = e.target.closest(".range__circle");
       const range = circle.closest(".range");
 
-      const left = Math.round(Math.max(0, Math.min(e.clientX - range.getBoundingClientRect().left, range.offsetWidth)));
-      circle.style.left = left + "px";
-      
-      range.dataset.value = Math.round(+range.dataset.min + (+range.dataset.max - +range.dataset.min) * left / range.offsetWidth);
-      range.dispatchEvent(new CustomEvent("change", {
-        bubbles: true,
-        value: () => +range.dataset.value
-      }));
+      circle.dataset.drag = true;
+
+      document.addEventListener("mousemove", mousemoveHandler);
+
+      function mousemoveHandler(e) {
+        const left = Math.round(Math.max(0, Math.min(e.clientX - range.getBoundingClientRect().left, range.offsetWidth)));
+
+        circle.style.left = left + "px";
+        range.dataset.value = Math.round(+range.dataset.min + (+range.dataset.max - +range.dataset.min) * left / range.offsetWidth);
+        
+        range.dispatchEvent(new Event("change", {bubbles: true}));
+      }
+
+      document.addEventListener("mouseup", function mouseupHandler() {
+        circle.dataset.drag = false;
+        document.removeEventListener("mousemove", mousemoveHandler);
+        document.removeEventListener("mouseup", mouseupHandler);
+      });
     }
   });
 
